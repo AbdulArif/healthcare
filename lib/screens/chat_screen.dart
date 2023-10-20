@@ -1,19 +1,23 @@
+// ignore_for_file: prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:healthcare/widgets/chat_sample.dart';
 
 class ChatScreen extends StatelessWidget {
+  const ChatScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(70.0),
+        preferredSize: const Size.fromHeight(50.0),
         child: AppBar(
-          backgroundColor: Color(0xFF7165D6),
-          leadingWidth: 30,
-          title: Row(
+          backgroundColor: const Color(0xFF7165D6),
+          leadingWidth: 15,
+          title: const Row(
             children: [
               CircleAvatar(
-                radius: 25,
+                radius: 20,
                 backgroundImage: AssetImage(
                   "images/doctor1.jpg",
                 ),
@@ -30,23 +34,23 @@ class ChatScreen extends StatelessWidget {
             ],
           ),
           actions: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(right: 20),
               child: Icon(
                 Icons.call,
                 color: Colors.white,
-                size: 26,
+                size: 20,
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(right: 15),
               child: Icon(
                 Icons.video_call,
                 color: Colors.white,
-                size: 30,
+                size: 20,
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(right: 10),
               child: Icon(
                 Icons.more_vert,
@@ -57,7 +61,8 @@ class ChatScreen extends StatelessWidget {
         ),
       ),
       body: ListView(
-        padding: EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 80),
+        padding:
+            const EdgeInsets.only(top: 20, left: 15, right: 15, bottom: 80),
         children: [
           ChatSample(),
           ChatSample(),
@@ -75,19 +80,19 @@ class ChatScreen extends StatelessWidget {
             color: Colors.grey.withOpacity(0.5),
             spreadRadius: 2,
             blurRadius: 10,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ]),
         child: Row(
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: 8),
               child: Icon(
                 Icons.add,
                 size: 30,
               ),
             ),
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: 5),
               child: Icon(
                 Icons.emoji_emotions_outlined,
@@ -96,20 +101,20 @@ class ChatScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(left: 10),
+              padding: const EdgeInsets.only(left: 10),
               child: Container(
                 alignment: Alignment.centerRight,
                 width: 270,
                 child: TextFormField(
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     hintText: "Type omething",
                     border: InputBorder.none,
                   ),
                 ),
               ),
             ),
-            Spacer(),
-            Padding(
+            const Spacer(),
+            const Padding(
               padding: EdgeInsets.only(right: 10),
               child: Icon(
                 Icons.send,
