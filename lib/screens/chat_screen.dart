@@ -104,10 +104,10 @@ class ChatScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 10),
               child: Container(
                 alignment: Alignment.centerRight,
-                width: 270,
+                width: 200,
                 child: TextFormField(
                   decoration: const InputDecoration(
-                    hintText: "Type omething",
+                    hintText: "Type Something",
                     border: InputBorder.none,
                   ),
                 ),

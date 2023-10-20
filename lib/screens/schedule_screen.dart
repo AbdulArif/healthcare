@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:healthcare/widgets/upcoming_schedule.dart';
 
 class ScheduleScreen extends StatefulWidget {
+  const ScheduleScreen({super.key});
+
   @override
   State<ScheduleScreen> createState() => _ScheduleScreenState();
 }
