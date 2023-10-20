@@ -24,8 +24,8 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 15),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
             child: Text(
               "Schedule",
               style: TextStyle(
@@ -34,12 +34,12 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Container(
-            padding: EdgeInsets.all(5),
-            margin: EdgeInsets.symmetric(horizontal: 10),
+            padding: const EdgeInsets.all(5),
+            margin: const EdgeInsets.symmetric(horizontal: 10),
             decoration: BoxDecoration(
-              color: Color(0xFFF4F6FA),
+              color: const Color(0xFFF4F6FA),
               borderRadius: BorderRadius.circular(10),
             ),
             child: Row(
@@ -52,10 +52,11 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                     });
                   },
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 12, horizontal: 10),
                     decoration: BoxDecoration(
                       color: _buttonIndex == 0
-                          ? Color(0xFF7165D6)
+                          ? const Color(0xFF7165D6)
                           : Colors.transparent,
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -77,15 +78,16 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                     });
                   },
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 12, horizontal: 10),
                     decoration: BoxDecoration(
                       color: _buttonIndex == 1
-                          ? Color(0xFF7165D6)
+                          ? const Color(0xFF7165D6)
                           : Colors.transparent,
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Text(
-                      "Completed",
+                      "In Progess",
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
@@ -102,10 +104,11 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
                     });
                   },
                   child: Container(
-                    padding: EdgeInsets.symmetric(vertical: 12, horizontal: 25),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 12, horizontal: 10),
                     decoration: BoxDecoration(
                       color: _buttonIndex == 2
-                          ? Color(0xFF7165D6)
+                          ? const Color(0xFF7165D6)
                           : Colors.transparent,
                       borderRadius: BorderRadius.circular(10),
                     ),
@@ -123,7 +126,7 @@ class _ScheduleScreenState extends State<ScheduleScreen> {
               ],
             ),
           ),
-          SizedBox(height: 30),
+          const SizedBox(height: 30),
           // Widgets According to buttons
           _scheduleWidgets[_buttonIndex]
         ],
