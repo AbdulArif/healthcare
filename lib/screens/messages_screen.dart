@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable, prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:healthcare/screens/chat_screen.dart';
 
@@ -12,6 +14,8 @@ class MessagesScreen extends StatelessWidget {
   ];
 
   bool activeStatus = true;
+
+  MessagesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -50,8 +54,8 @@ class MessagesScreen extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(
-                    width: 300,
+                  SizedBox(
+                    width: 250,
                     child: Padding(
                       padding: EdgeInsets.symmetric(horizontal: 15),
                       child: TextFormField(
@@ -97,7 +101,7 @@ class MessagesScreen extends StatelessWidget {
                     textDirection: TextDirection.rtl,
                     children: [
                       Center(
-                        child: Container(
+                        child: SizedBox(
                           height: 65,
                           width: 65,
                           child: ClipRRect(
