@@ -20,16 +20,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: SafeArea(
           child: Column(
             children: [
-              const SizedBox(height: 10),
+              const SizedBox(height: 5),
               Padding(
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(10),
                 child: Image.asset(
                   "images/doctors.png",
                 ),
               ),
-              const SizedBox(height: 15),
+              const SizedBox(height: 5),
               const Padding(
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                padding: EdgeInsets.symmetric(vertical: 2, horizontal: 15),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Full Name",
@@ -39,7 +39,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
               const Padding(
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                padding: EdgeInsets.symmetric(vertical: 2, horizontal: 15),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Email Address",
@@ -49,7 +49,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
               const Padding(
-                padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
+                padding: EdgeInsets.symmetric(vertical: 2, horizontal: 15),
                 child: TextField(
                   decoration: InputDecoration(
                     labelText: "Phone Number",
@@ -59,7 +59,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(12),
+                padding:
+                    const EdgeInsets.symmetric(vertical: 2, horizontal: 15),
                 child: TextField(
                   obscureText: passToggle ? true : false,
                   decoration: InputDecoration(
@@ -82,15 +83,16 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 5),
               InkWell(
                 onTap: () {},
                 child: Container(
                   padding: const EdgeInsets.symmetric(vertical: 15),
-                  width: 350,
+                  width: 335,
                   decoration: BoxDecoration(
                     color: const Color(0xFF7165D6),
                     borderRadius: BorderRadius.circular(10),
+                    // ignore: prefer_const_literals_to_create_immutables
                     boxShadow: [
                       const BoxShadow(
                         color: Colors.black12,
