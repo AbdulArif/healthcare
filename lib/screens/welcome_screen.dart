@@ -1,8 +1,10 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:healthcare/screens/login_screen.dart';
 import 'package:healthcare/screens/sign_up_screen.dart';
-import 'package:healthcare/widgets/navbar_roots.dart';
 
+// ignore: use_key_in_widget_constructors
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,28 +18,28 @@ class WelcomeScreen extends StatelessWidget {
             SizedBox(
               height: 15,
             ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: TextButton(
-                onPressed: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => NavBarRoots(),
-                      ));
-                },
-                child: Text(
-                  "SKIP",
-                  style: TextStyle(
-                    color: Color(0xFF7165D6),
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
-            SizedBox(
-              height: 50,
-            ),
+            // Align(
+            //   alignment: Alignment.centerRight,
+            //   child: TextButton(
+            //     onPressed: () {
+            //       Navigator.push(
+            //           context,
+            //           MaterialPageRoute(
+            //             builder: (context) => NavBarRoots(),
+            //           ));
+            //     },
+            //     child: Text(
+            //       "SKIP",
+            //       style: TextStyle(
+            //         color: Color(0xFF7165D6),
+            //         fontSize: 20,
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            // SizedBox(
+            //   height: 20,
+            // ),
             Padding(
               padding: EdgeInsets.all(20),
               child: Image.asset("images/doctors.png"),

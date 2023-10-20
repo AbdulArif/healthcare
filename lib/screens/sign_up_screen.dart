@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:healthcare/screens/login_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
+  const SignUpScreen({super.key});
+
   @override
   State<SignUpScreen> createState() => _SignUpScreenState();
 }
@@ -18,15 +20,15 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: SafeArea(
           child: Column(
             children: [
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Image.asset(
                   "images/doctors.png",
                 ),
               ),
-              SizedBox(height: 15),
-              Padding(
+              const SizedBox(height: 15),
+              const Padding(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
                 child: TextField(
                   decoration: InputDecoration(
@@ -36,7 +38,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
                 child: TextField(
                   decoration: InputDecoration(
@@ -46,7 +48,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(vertical: 8, horizontal: 15),
                 child: TextField(
                   decoration: InputDecoration(
@@ -61,9 +63,9 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 child: TextField(
                   obscureText: passToggle ? true : false,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    label: Text("Enter Password"),
-                    prefixIcon: Icon(Icons.lock),
+                    border: const OutlineInputBorder(),
+                    label: const Text("Enter Password"),
+                    prefixIcon: const Icon(Icons.lock),
                     suffixIcon: InkWell(
                       onTap: () {
                         if (passToggle == true) {
@@ -74,30 +76,30 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         setState(() {});
                       },
                       child: passToggle
-                          ? Icon(CupertinoIcons.eye_slash_fill)
-                          : Icon(CupertinoIcons.eye_fill),
+                          ? const Icon(CupertinoIcons.eye_slash_fill)
+                          : const Icon(CupertinoIcons.eye_fill),
                     ),
                   ),
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               InkWell(
                 onTap: () {},
                 child: Container(
-                  padding: EdgeInsets.symmetric(vertical: 15),
+                  padding: const EdgeInsets.symmetric(vertical: 15),
                   width: 350,
                   decoration: BoxDecoration(
-                    color: Color(0xFF7165D6),
+                    color: const Color(0xFF7165D6),
                     borderRadius: BorderRadius.circular(10),
                     boxShadow: [
-                      BoxShadow(
+                      const BoxShadow(
                         color: Colors.black12,
                         blurRadius: 4,
                         spreadRadius: 2,
                       ),
                     ],
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text(
                       "Create Account",
                       style: TextStyle(
@@ -109,11 +111,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Already have account?",
                     style: TextStyle(
                       fontSize: 16,
@@ -128,7 +130,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             builder: (context) => loginScreen(),
                           ));
                     },
-                    child: Text(
+                    child: const Text(
                       "Log In",
                       style: TextStyle(
                         fontSize: 18,
