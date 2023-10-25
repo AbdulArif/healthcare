@@ -20,14 +20,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
         child: SafeArea(
           child: Column(
             children: [
-              const SizedBox(height: 5),
+              // const SizedBox(height: 5),
               Padding(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(5),
                 child: Image.asset(
                   "images/doctors.png",
                 ),
               ),
-              const SizedBox(height: 5),
+              // const SizedBox(height: 5),
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 2, horizontal: 15),
                 child: TextField(
@@ -83,7 +83,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: 5),
+              // const SizedBox(height: 5),
               InkWell(
                 onTap: () {},
                 child: Container(
@@ -113,7 +113,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
               ),
-              const SizedBox(height: 10),
+              // const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
