@@ -12,12 +12,10 @@ class WelcomeScreen extends StatelessWidget {
       child: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        padding: EdgeInsets.all(10),
+        padding: EdgeInsets.all(5),
         child: Column(
           children: [
-            SizedBox(
-              height: 15,
-            ),
+            // SizedBox(height: 5),
             // Align(
             //   alignment: Alignment.centerRight,
             //   child: TextButton(
@@ -41,21 +39,21 @@ class WelcomeScreen extends StatelessWidget {
             //   height: 20,
             // ),
             Padding(
-              padding: EdgeInsets.all(20),
+              padding: EdgeInsets.all(5),
               child: Image.asset("images/doctors.png"),
             ),
-            SizedBox(height: 50),
+            // SizedBox(height: 5),
             Text(
               "Doctors Appointment",
               style: TextStyle(
                 color: Color(0xFF7165D6),
-                fontSize: 35,
+                fontSize: 25,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 1,
                 wordSpacing: 2,
               ),
             ),
-            SizedBox(height: 10),
+            // SizedBox(height: 5),
             Text(
               "Appoint Your Doctor",
               style: TextStyle(
@@ -64,7 +62,7 @@ class WelcomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            SizedBox(height: 60),
+            // SizedBox(height: 5),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -81,12 +79,12 @@ class WelcomeScreen extends StatelessWidget {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 40),
                       child: Text(
                         "Log In",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 22,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -111,7 +109,7 @@ class WelcomeScreen extends StatelessWidget {
                         "Sign Up",
                         style: TextStyle(
                           color: Colors.white,
-                          fontSize: 22,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
