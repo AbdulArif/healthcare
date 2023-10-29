@@ -43,6 +43,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 height: isDesktop ? 200 : 100, // Adjust the image height
               ),
             ),
+            SizedBox(height: 10),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 2, horizontal: 15),
               child: TextField(
@@ -53,6 +54,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
             ),
+            SizedBox(height: 10),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 2, horizontal: 15),
               child: TextField(
@@ -63,6 +65,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
             ),
+            SizedBox(height: 10),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 2, horizontal: 15),
               child: TextField(
@@ -73,6 +76,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
             ),
+            SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 15),
               child: TextField(
@@ -97,6 +101,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
             ),
+            SizedBox(height: 10),
             InkWell(
               onTap: () {},
               child: Container(
@@ -125,6 +130,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
               ),
             ),
+            SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
