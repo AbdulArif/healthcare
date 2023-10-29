@@ -69,7 +69,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   );
                 },
-                child: Text("Log In"),
+                child: Text(
+                  "Log In",
+                ),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
