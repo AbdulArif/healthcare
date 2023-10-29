@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:healthcare/constant/color.dart';
 import 'package:healthcare/screens/login_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
@@ -102,7 +103,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 padding: const EdgeInsets.symmetric(vertical: 15),
                 width: isDesktop ? 400 : 335, // Adjust the button width
                 decoration: BoxDecoration(
-                  color: const Color(0xFF7165D6),
+                  color: AppColors.secondaryColor,
                   borderRadius: BorderRadius.circular(10),
                   boxShadow: const [
                     BoxShadow(
