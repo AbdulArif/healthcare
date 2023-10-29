@@ -81,29 +81,33 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
             SizedBox(height: 10),
-            InkWell(
-              onTap: () {},
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 15),
-                width: isDesktop ? 400 : 335, // Adjust the button width
-                decoration: BoxDecoration(
-                  color: AppColors.secondaryColor,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Colors.black12,
-                      blurRadius: 4,
-                      spreadRadius: 2,
-                    ),
-                  ],
-                ),
-                child: const Center(
-                  child: Text(
-                    "Log In",
-                    style: TextStyle(
-                      fontSize: 22,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: 15), // Equal free space on both sides
+              child: InkWell(
+                onTap: () {},
+                child: Container(
+                  padding: const EdgeInsets.symmetric(vertical: 15),
+                  width: isDesktop ? 400 : 335, // Adjust the button width
+                  decoration: BoxDecoration(
+                    color: AppColors.secondaryColor,
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Colors.black12,
+                        blurRadius: 4,
+                        spreadRadius: 2,
+                      ),
+                    ],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "Log In",
+                      style: TextStyle(
+                        fontSize: 22,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                 ),
@@ -114,7 +118,7 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  "Dont't have an account?",
+                  "Don't have an account?",
                   style: TextStyle(
                     fontSize: 16,
                     fontWeight: FontWeight.w500,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:healthcare/screens/login_screen.dart';
 import 'package:healthcare/screens/sign_up_screen.dart';
 import 'package:healthcare/screens/welcome_screen.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: WelcomeScreen(),
+      home: LoginScreen(),
     );
   }
 }
