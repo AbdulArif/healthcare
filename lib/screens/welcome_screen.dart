@@ -79,7 +79,7 @@ class WelcomeScreen extends StatelessWidget {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 10, horizontal: 40),
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 30),
                       child: Text(
                         "Log In",
                         style: TextStyle(
@@ -104,7 +104,7 @@ class WelcomeScreen extends StatelessWidget {
                     },
                     child: Container(
                       padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 40),
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 30),
                       child: Text(
                         "Sign Up",
                         style: TextStyle(
