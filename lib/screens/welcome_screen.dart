@@ -10,39 +10,21 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        width: MediaQuery.of(context).size.width,
-        height: MediaQuery.of(context).size.height,
-        padding: EdgeInsets.all(5),
+        width: double.infinity, // Use the full width of the screen
+        height: double.infinity, // Use the full height of the screen
+        padding: EdgeInsets.all(20), // Adjust padding as needed
         child: Column(
+          mainAxisAlignment:
+              MainAxisAlignment.center, // Center the content vertically
+          crossAxisAlignment:
+              CrossAxisAlignment.center, // Center the content horizontally
           children: [
-            // SizedBox(height: 5),
-            // Align(
-            //   alignment: Alignment.centerRight,
-            //   child: TextButton(
-            //     onPressed: () {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //             builder: (context) => NavBarRoots(),
-            //           ));
-            //     },
-            //     child: Text(
-            //       "SKIP",
-            //       style: TextStyle(
-            //         color: Color(0xFF7165D6),
-            //         fontSize: 20,
-            //       ),
-            //     ),
-            //   ),
-            // ),
-            // SizedBox(
-            //   height: 20,
-            // ),
-            Padding(
-              padding: EdgeInsets.all(5),
-              child: Image.asset("images/doctors.png"),
+            Image.asset(
+              "images/doctors.png",
+              height: MediaQuery.of(context).size.height *
+                  0.4, // Adjust image height
             ),
-            // SizedBox(height: 5),
+            SizedBox(height: 20), // Add spacing between the image and text
             Text(
               "Doctors Appointment",
               style: TextStyle(
@@ -53,7 +35,7 @@ class WelcomeScreen extends StatelessWidget {
                 wordSpacing: 2,
               ),
             ),
-            // SizedBox(height: 5),
+            SizedBox(height: 10), // Add spacing between the text and buttons
             Text(
               "Appoint Your Doctor",
               style: TextStyle(
@@ -62,9 +44,10 @@ class WelcomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            // SizedBox(height: 5),
+            SizedBox(height: 20), // Add spacing between the text and buttons
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment:
+                  MainAxisAlignment.center, // Center the buttons horizontally
               children: [
                 Material(
                   color: Color(0xFF7165D6),
@@ -72,10 +55,11 @@ class WelcomeScreen extends StatelessWidget {
                   child: InkWell(
                     onTap: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => loginScreen(),
-                          ));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => loginScreen(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding:
@@ -91,16 +75,18 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+                SizedBox(width: 20), // Add spacing between the buttons
                 Material(
                   color: Color(0xFF7165D6),
                   borderRadius: BorderRadius.circular(10),
                   child: InkWell(
                     onTap: () {
                       Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => SignUpScreen(),
-                          ));
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SignUpScreen(),
+                        ),
+                      );
                     },
                     child: Container(
                       padding:
