@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:healthcare/constant/color.dart';
 import 'package:healthcare/screens/sign_up_screen.dart';
 import 'package:healthcare/widgets/navbar_roots.dart';
 
@@ -69,6 +70,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   );
                 },
+                style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all<Color>(
+                        AppColors.secondaryColor)),
                 child: Text("Log In"),
               ),
               Row(
