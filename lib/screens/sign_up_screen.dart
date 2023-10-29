@@ -14,20 +14,22 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
   @override
   Widget build(BuildContext context) {
+    double screenHeight = MediaQuery.of(context).size.height;
+    double imageHeight = screenHeight * 0.2; // Adjust the percentage as needed
+
     return Material(
       color: Colors.white,
       child: SingleChildScrollView(
         child: SafeArea(
           child: Column(
             children: [
-              // const SizedBox(height: 5),
               Padding(
                 padding: const EdgeInsets.all(5),
                 child: Image.asset(
                   "images/doctors.png",
+                  height: imageHeight,
                 ),
               ),
-              // const SizedBox(height: 5),
               const Padding(
                 padding: EdgeInsets.symmetric(vertical: 2, horizontal: 15),
                 child: TextField(
@@ -83,7 +85,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
               ),
-              // const SizedBox(height: 5),
               InkWell(
                 onTap: () {},
                 child: Container(
@@ -92,7 +93,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   decoration: BoxDecoration(
                     color: const Color(0xFF7165D6),
                     borderRadius: BorderRadius.circular(10),
-                    // ignore: prefer_const_literals_to_create_immutables
                     boxShadow: [
                       const BoxShadow(
                         color: Colors.black12,
@@ -113,12 +113,11 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   ),
                 ),
               ),
-              // const SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    "Already have account?",
+                    "Already have an account?",
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.w500,
